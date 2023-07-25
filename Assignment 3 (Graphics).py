@@ -1,0 +1,10 @@
+from tkinter import Tk, Canvas
+frame=Tk()
+canvas=Canvas(bg='black',height=350,width=500)
+coord=(100, 100, 200, 200)
+canvas.create_arc(coord,start=0,extent=90,fill='white')
+canvas.create_arc(coord,start=90,extent=90,fill='blue')
+canvas.create_arc(coord,start=180,extent=90,fill='white')
+canvas.create_arc(coord,start=270,extent=90,fill='blue')
+canvas.pack()
+frame.mainloop()
